@@ -62,7 +62,6 @@ python generate.py sample.csv layout2.png --shape "3x3+2x3"
 ![layout2.png](./assets/layout2.png)
 
 ## 注意事項
-- フォントはシステムの`arial.ttf`を優先しますが、見つからない場合はデフォルトフォントを使用します。
 - CSVの行・列数に応じて自動的に画像サイズが決まります。
 
 ## ライセンス
