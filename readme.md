@@ -44,7 +44,22 @@ Shift,A,S,D,F
 ```
 
 ## 出力例
-- 上記コマンドを実行すると、各キーがラベル付きで格子状に描画された`layout.png`が生成されます。
+
+### 1ブロック（全体）
+```sh
+python generate.py sample.csv layout.png --shape "5x3"
+```
+- 5列3行（5x3）で全体を1ブロックとして描画
+
+![layout.png](./assets/layout.png)
+
+### 2ブロック分割
+```sh
+python generate.py sample.csv layout2.png --shape "3x3+2x3"
+```
+- 3列3行（3x3）のブロックと2列3行（2x3）のブロックに分割して描画
+
+![layout2.png](./assets/layout2.png)
 
 ## 注意事項
 - フォントはシステムの`arial.ttf`を優先しますが、見つからない場合はデフォルトフォントを使用します。
